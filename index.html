@@ -12,6 +12,31 @@
   background: black;
   transform: scale(1.5);
 }
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #008CBA; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+}
 </style>
 <head>
     <meta charset="utf-8">
@@ -23,11 +48,11 @@
 <body style="background-color:black;">
 	<div id="outPopUp">
     <canvas id="gameWorld" tabindex="1" width="400" height="400" style="border: 1px solid brown; background: white"></canvas>
-    <button onclick="speeddown()">Speed Down</button>
-    <button onclick="speedup()">Speed Up</button>
-    <button onclick="gospel()">Gospel Glider Gun</button>
-    <button onclick="exploder()">Exploder</button><button onclick="glider()">Glider</button>
-    <button onclick="smallexploder()">Small Exploder</button><button onclick="tencellrow()">Ten Cell Row</button><button onclick="lightweightspaceship()">Lightweight Spaceship</button><button onclick="tumbler()">Tumbler</button>
+    <button class="button button2" onclick="speeddown()">Speed Down</button>
+    <button class="button button2" onclick="speedup()">Speed Up</button>
+    <button class="button button2" onclick="gospel()">Gospel Glider Gun</button>
+    <button class="button button2" onclick="exploder()">Exploder</button><button class="button button2" onclick="glider()">Glider</button>
+    <button class="button button2" onclick="smallexploder()">Small Exploder</button><button class="button button2" onclick="tencellrow()">Ten Cell Row</button><button class="button button2" onclick="lightweightspaceship()">Lightweight Spaceship</button><button class="button button2" onclick="tumbler()">Tumbler</button>
 	</div>
 </body>
 </html>
