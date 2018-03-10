@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+#outPopUp {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  background: black;
+  transform: scale(1.5);
+}
+</style>
+<head>
+    <meta charset="utf-8">
+    <title>Conway's Game of Life</title>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<body style="background-color:black;">
+	<div id="outPopUp">
+    <canvas id="gameWorld" tabindex="1" width="400" height="400" style="border: 1px solid brown; background: white"></canvas>
+    <button onclick="speeddown()">Speed Down</button>
+    <button onclick="speedup()">Speed Up</button>
+    <button onclick="gospel()">Gospel Glider Gun</button>
+    <button onclick="exploder()">Exploder</button><button onclick="glider()">Glider</button>
+    <button onclick="smallexploder()">Small Exploder</button><button onclick="tencellrow()">Ten Cell Row</button><button onclick="lightweightspaceship()">Lightweight Spaceship</button><button onclick="tumbler()">Tumbler</button>
+	</div>
+</body>
+</html>
